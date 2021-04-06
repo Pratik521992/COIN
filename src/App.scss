@@ -1,0 +1,166 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: #0F1111;
+    color: aliceblue;
+    padding: 0 8px;
+    .wallet {
+      border: 1px yellow solid;
+      border-radius: 18px;
+      padding: -12px;
+    }
+    
+  .HeaderLogo {
+    width: 50px;
+    display: flex;
+  }
+  
+  .HeaderLeft {
+    display: flex;
+  }
+
+  .HeaderItem {
+      display: flex;
+      align-items: center;
+      padding: 0px 8px;
+      margin-left: 28px;
+      width: auto;
+      &:hover {
+        color: yellow;
+    }
+      &:active {
+        color: yellow;
+        background-color: green;
+    }
+      &:nth-child(n) {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-evenly;
+          
+      }
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+     
+  }
+  
+  .HeaderRight {
+    display: flex;
+    width: auto;
+  }
+  }
+ .Search {
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: center;
+   margin: 2% auto;
+   .SearchLabel {
+    float: right;
+  }
+ }
+  
+  .SearchContainer {
+    &:hover > .SearchInput {
+      width: 400px;
+      padding: 0 6px;
+    }
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    .SearchInput {
+      border: none;
+      background: none;
+      outline: none;
+      float: left;
+      padding: 0;
+      color: white;
+      font-size: 16px;
+      transition: 0.4s;
+      line-height: 40px;
+      width: 0px;
+      font-weight: bold;
+    }
+
+    .SearchBtn {
+      border: none;
+      outline: none;
+      text-decoration: none;
+      color: #e84118;
+      float: right;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2f3640;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.4s;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        background: white;
+        color: black;
+      }
+      }       
+  }
+   .SearchBtn > i {
+    font-size: 30px;
+   }
+
+   .Dashboard {
+    background: #f5f6f8;
+    padding: 25px;
+    font-size: 15px;
+     display: flex;
+     justify-content: center;
+     flex-direction: column; 
+     .Shards {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      grid-gap: 2%;
+      padding: 20px;
+      width: 100%;
+      .CardItem {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .shardValue {
+          margin-bottom: 8px;
+          font-size: 22px;
+        }
+      }
+     }
+     .CardItem {
+      min-width: 200px;
+      margin: 12px;
+      height: auto;
+      justify-content: space-evenly;
+      border-radius: 11px !important;
+    } 
+    .MapContainer {
+      height: auto;
+      padding: 20px;
+    }
+    .InfoContainer {
+      display: flex;
+      grid-gap: 2%;
+      padding: 20px;
+      height: 50vh;   
+      width: 100%;   
+    }
+   }
+   
+
+  

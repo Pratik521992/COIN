@@ -1,0 +1,19 @@
+{
+    "status": "OK",
+    "data": {
+        "time": 1617524400,
+        "lastSeen": 1617524325,
+        "reportedHashrate": 56333486,
+        "currentHashrate": 39611111.11111111,
+        "validShares": 35,
+        "invalidShares": 0,
+        "staleShares": 1,
+        "averageHashrate": 51286786.78678676,
+        "activeWorkers": 1,
+        "unpaid": 3503298829872405,
+        "unconfirmed": null,
+        "coinsPerMin": 0.0000016860964006413804,
+        "usdPerMin": 0.0033927125944785666,
+        "btcPerMin": 5.9198844626518874e-8
+    }
+}
