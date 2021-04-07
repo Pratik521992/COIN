@@ -68,7 +68,7 @@
   
   .SearchContainer {
     &:hover > .SearchInput {
-      width: 400px;
+      width: 200px;
       padding: 0 6px;
     }
     background-color: #2f3640;
@@ -121,7 +121,8 @@
     font-size: 15px;
      display: flex;
      justify-content: center;
-     flex-direction: column; 
+     flex-direction: column;
+     align-items: center;
      .Shards {
       display: flex;
       flex-direction: row;
@@ -136,9 +137,15 @@
         align-items: center;
         justify-content: center;
         text-align: center;
-        .shardValue {
+        .shardValueGreen {
           margin-bottom: 8px;
           font-size: 22px;
+          color: green;
+        }
+        .shardValueRed {
+          margin-bottom: 8px;
+          font-size: 22px;
+          color: orangered;
         }
       }
      }
@@ -150,8 +157,41 @@
       border-radius: 11px !important;
     } 
     .MapContainer {
-      height: auto;
-      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 90vw;
+      overflow: hidden;
+      border: 1px solid red;
+      .CardItem {
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        canvas {
+          height: 40vh !important;
+          width: 40vw !important;
+        }
+      }
+      @media only screen and (min-width: 300px) and (max-width: 768px) {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        .CardItem {
+          width: 100vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          canvas {
+            height: 40vh !important;
+            width: 80vw !important;
+          }
+        }
+      }
+      
     }
     .InfoContainer {
       display: flex;

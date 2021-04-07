@@ -1,8 +1,8 @@
 import { Typography } from "@material-ui/core";
-import { Chart } from "chart.js";
-import React, { useEffect } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import CardItem from "../utils/CardItem";
+import CountUp from "react-countup";
 import {
   usdToInr,
   epoch,
@@ -11,58 +11,19 @@ import {
   ethToUsd,
   ethToInr,
 } from "../utils/converted";
-
-const canvasRef = React.createRef();
+import PayoutChart from "./PayoutChart";
+import HashRateChart from "./HashRateChart";
 
 function Dashboard() {
   const { stats, inr, usd } = useSelector((state) => state.dashboard);
-  useEffect(() => {
-    const data = {
-      labels: [
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "January",
-        "February",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-      ],
-      datasets: [
-        {
-          label: "Hash Rate",
-          data: [65, 59, 80, 81, 26, 55, 40, 65, 59, 80, 81, 26, 55, 40],
-          fill: true,
-          borderColor: "#2f3640",
-        },
-      ],
-    };
-    const chartBody = new Chart(canvasRef.current, {
-      type: "line",
-      data: data,
-      options: {
-        responsive: true,
-        plugins: {
-          title: {
-            display: true,
-            text: "Custom Chart Title",
-            padding: {
-              top: 10,
-              bottom: 30,
-            },
-          },
-        },
-      },
-    });
+  
 
-    chartBody.render();
-  }, []);
+  const values = {
+    speed : hashToMegaHash(stats.reportedHashrate),
+    minedEth: getETH(stats.unpaid),
+    minedInr: ethToInr(inr, getETH(stats.unpaid)),
+    minedUsd: ethToUsd(usd, getETH(stats.unpaid))
+  }
 
   return (
     <div className="Dashboard">
@@ -77,9 +38,55 @@ function Dashboard() {
           <Typography color="textSecondary" gutterBottom>
             Hash Rate
           </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            {hashToMegaHash(stats.reportedHashrate)} MH/s
+          <Typography className={values.speed<56 ? "shardValueRed": "shardValueGreen"} variant="h5" component="h2">
+            <CountUp
+              end={values.speed}
+              separator=" "
+              decimals={2}
+              decimal="."
+              suffix=" MH/s"
+            />
           </Typography>
+        </CardItem>
+
+        <CardItem>
+          <Typography color="textSecondary" gutterBottom>
+            Ballance Amount
+          </Typography>
+          <Typography className={values.minedEth<0.001 ? "shardValueRed": "shardValueGreen"} variant="h5" component="h2">
+          <CountUp
+              end={values.minedEth}
+              separator=","
+              decimals={4}
+              decimal="."
+              suffix=" ETH"
+              />
+          </Typography>
+          <Typography color="textSecondary" gutterBottom>
+            Mined INR
+          </Typography>
+          <Typography className="shardValueGreen" variant="h5" component="h2">
+          <CountUp
+              end={values.minedInr}
+              separator=","
+              decimals={2}
+              decimal="."
+              suffix=" &#x20b9;"
+            />
+          </Typography>
+          <Typography color="textSecondary" gutterBottom>
+            Unpaid USD
+          </Typography>
+          <Typography className="shardValueGreen" variant="h5" component="h2">
+          <CountUp
+              end={values.minedUsd}
+              separator=","
+              decimals={2}
+              decimal="."
+              suffix=" $"
+            />
+          </Typography>
+         
         </CardItem>
 
         <CardItem>
@@ -120,27 +127,6 @@ function Dashboard() {
 
         <CardItem>
           <Typography color="textSecondary" gutterBottom>
-            Unpaid Amount
-          </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            {getETH(stats.unpaid)} ETH
-          </Typography>
-          <Typography color="textSecondary" gutterBottom>
-            Unpaid USD
-          </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            $ {ethToUsd(usd, getETH(stats.unpaid))|| 'Loading...'}
-          </Typography>
-          <Typography color="textSecondary" gutterBottom>
-            Unpaid INR
-          </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            &#x20b9; {ethToInr(inr, getETH(stats.unpaid))|| 'Loading...'}
-          </Typography>
-        </CardItem>
-
-        <CardItem>
-          <Typography color="textSecondary" gutterBottom>
             Shares (Valid)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
@@ -155,9 +141,8 @@ function Dashboard() {
         </CardItem>
       </div>
       <div className="MapContainer">
-        <CardItem>
-          <canvas ref={canvasRef} />
-        </CardItem>
+        <HashRateChart />
+        <PayoutChart />
       </div>
       {/* <div className="InfoContainer">
         <CardItem />
