@@ -1,7 +1,7 @@
-import { STATS_DATA, EXCHANGE_RATE } from "../types";
+import { STATS_DATA, EXCHANGE_RATE, PAYOUTS, UNPAID } from "../types";
 
 const initialState = {
-  stats: {
+  stats: [{
     activeWorkers: 0,
     averageHashrate: 0,
     btcPerMin: 0,
@@ -18,7 +18,7 @@ const initialState = {
     validShares: 35,
     inr: null,
     usd: null
-  },
+  }],
 };
 
 const dashboardReducer = (state = initialState, action) => {
@@ -27,11 +27,22 @@ const dashboardReducer = (state = initialState, action) => {
       return {
         ...state,
         stats: action.payload,
+        nextTick: new Date().getMilliseconds()
       };
     case EXCHANGE_RATE:
       return {
         ...state,
         [action.currency]: action.rate,
+      };
+    case PAYOUTS:
+      return {
+        ...state,
+        payouts: action.payload,
+      };
+    case UNPAID:
+      return {
+        ...state,
+        unpaid: action.payload,
       };
     default:
       return state;

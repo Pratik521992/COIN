@@ -4,10 +4,22 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import asynsActions from "redux-thunk";
+import { createStore, applyMiddleware } from "redux";
 import rootReducer from "./redux/reducers/rootReducer";
+import { getComponentDetails } from "./redux/actions/dashboard";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, applyMiddleware(asynsActions));
+
+refreshToken();
+
+export function refreshToken() {
+  const nextTick = 120000;
+  store.dispatch(getComponentDetails());
+  setTimeout(() => {
+    refreshToken();
+  }, nextTick);
+}
 
 ReactDOM.render(
   <Provider store={store}>

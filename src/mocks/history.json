@@ -1,0 +1,1445 @@
+{
+    "status": "OK",
+    "data": [
+        {
+            "time": 1617794400,
+            "reportedHashrate": 48963068,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56355242.56651016,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617795000,
+            "reportedHashrate": 54827427,
+            "currentHashrate": 52944444.44444445,
+            "validShares": 47,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56347417.84037559,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617795600,
+            "reportedHashrate": 48126871,
+            "currentHashrate": 42944444.44444445,
+            "validShares": 38,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56214397.49608764,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617796200,
+            "reportedHashrate": 60077113,
+            "currentHashrate": 45555555.55555555,
+            "validShares": 41,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56099765.258215964,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617796800,
+            "reportedHashrate": 60370745,
+            "currentHashrate": 40000000,
+            "validShares": 36,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55977308.294209704,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617797400,
+            "reportedHashrate": 60426337,
+            "currentHashrate": 45166666.666666664,
+            "validShares": 40,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 55911971.83098592,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617798000,
+            "reportedHashrate": 60425736,
+            "currentHashrate": 50333333.333333336,
+            "validShares": 44,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 55859546.16588419,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617798600,
+            "reportedHashrate": 60458772,
+            "currentHashrate": 55888888.88888889,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 55848982.78560251,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617799200,
+            "reportedHashrate": 60474285,
+            "currentHashrate": 64777777.777777776,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 55901017.2143975,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617799800,
+            "reportedHashrate": 60474079,
+            "currentHashrate": 63666666.666666664,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 55976525.82159625,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617800400,
+            "reportedHashrate": 60457173,
+            "currentHashrate": 63277777.777777776,
+            "validShares": 55,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 55994522.6917058,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617801000,
+            "reportedHashrate": 60502881,
+            "currentHashrate": 59222222.222222224,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 55960485.13302035,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617801600,
+            "reportedHashrate": 60364376,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 55968309.85915494,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617802200,
+            "reportedHashrate": 59419118,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 55989045.38341159,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617802800,
+            "reportedHashrate": 57185430,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56041079.812206574,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617803400,
+            "reportedHashrate": 60457154,
+            "currentHashrate": 66277777.777777776,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56053990.61032864,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617804000,
+            "reportedHashrate": 57632284,
+            "currentHashrate": 70000000,
+            "validShares": 63,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56150625.97809077,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617804600,
+            "reportedHashrate": 58284173,
+            "currentHashrate": 69611111.1111111,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56260172.14397495,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617805200,
+            "reportedHashrate": 55859026,
+            "currentHashrate": 71833333.33333333,
+            "validShares": 64,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56416666.666666664,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617805800,
+            "reportedHashrate": 56118628,
+            "currentHashrate": 70722222.22222222,
+            "validShares": 63,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56643583.72456963,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617806400,
+            "reportedHashrate": 58486918,
+            "currentHashrate": 71833333.33333333,
+            "validShares": 64,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56925273.8654147,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617807000,
+            "reportedHashrate": 58019801,
+            "currentHashrate": 66277777.777777776,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57261737.089201875,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617807600,
+            "reportedHashrate": 54142805,
+            "currentHashrate": 59611111.11111111,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57509389.67136149,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617808200,
+            "reportedHashrate": 53823468,
+            "currentHashrate": 55555555.55555555,
+            "validShares": 50,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57736306.72926446,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617808800,
+            "reportedHashrate": 56672836,
+            "currentHashrate": 53333333.333333336,
+            "validShares": 48,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57872065.72769952,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617809400,
+            "reportedHashrate": 57702152,
+            "currentHashrate": 55166666.666666664,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57958137.71517996,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617810000,
+            "reportedHashrate": 57834554,
+            "currentHashrate": 55166666.666666664,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57992175.27386541,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617810600,
+            "reportedHashrate": 57644072,
+            "currentHashrate": 55166666.666666664,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57963615.02347418,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617811200,
+            "reportedHashrate": 58847227,
+            "currentHashrate": 62944444.44444445,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58052425.66510172,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617811800,
+            "reportedHashrate": 60258962,
+            "currentHashrate": 62944444.44444445,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58196009.38967136,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617812400,
+            "reportedHashrate": 60297744,
+            "currentHashrate": 63666666.666666664,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58420187.79342724,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617813000,
+            "reportedHashrate": 60313919,
+            "currentHashrate": 65166666.666666664,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58717527.38654148,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617813600,
+            "reportedHashrate": 60376149,
+            "currentHashrate": 62944444.44444445,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 59051251.95618155,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617814200,
+            "reportedHashrate": 56514363,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 59455399.06103288,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617814800,
+            "reportedHashrate": 55465950,
+            "currentHashrate": 57388888.88888889,
+            "validShares": 51,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 59804773.08294211,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617815400,
+            "reportedHashrate": 58158689,
+            "currentHashrate": 60333333.333333336,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 60115023.47417842,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617816000,
+            "reportedHashrate": 60281415,
+            "currentHashrate": 54055555.55555555,
+            "validShares": 48,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 60341940.53208139,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617816600,
+            "reportedHashrate": 60022316,
+            "currentHashrate": 55166666.666666664,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 60482785.602503926,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617817200,
+            "reportedHashrate": 0,
+            "currentHashrate": 47388888.88888889,
+            "validShares": 42,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 60467136.15023476,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617817800,
+            "reportedHashrate": 0,
+            "currentHashrate": 40722222.222222224,
+            "validShares": 36,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 60302816.90140847,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617818400,
+            "reportedHashrate": 0,
+            "currentHashrate": 30722222.222222224,
+            "validShares": 27,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 60060250.39123633,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617819000,
+            "reportedHashrate": 0,
+            "currentHashrate": 21111111.111111112,
+            "validShares": 19,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59786384.97652583,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617819600,
+            "reportedHashrate": 0,
+            "currentHashrate": 14444444.444444444,
+            "validShares": 13,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59429186.228482015,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617820200,
+            "reportedHashrate": 47555919,
+            "currentHashrate": 7777777.777777778,
+            "validShares": 7,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59071987.480438195,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617820800,
+            "reportedHashrate": 55586026,
+            "currentHashrate": 14444444.444444444,
+            "validShares": 13,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58780125.19561817,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617821400,
+            "reportedHashrate": 57340236,
+            "currentHashrate": 21111111.111111112,
+            "validShares": 19,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58605633.802816905,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617822000,
+            "reportedHashrate": 60292127,
+            "currentHashrate": 25555555.555555556,
+            "validShares": 23,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58462441.314554006,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617822600,
+            "reportedHashrate": 60576854,
+            "currentHashrate": 34444444.44444445,
+            "validShares": 31,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58405320.81377153,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617823200,
+            "reportedHashrate": 60671091,
+            "currentHashrate": 47777777.777777776,
+            "validShares": 43,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58517605.63380283,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617823800,
+            "reportedHashrate": 60741354,
+            "currentHashrate": 44444444.44444445,
+            "validShares": 40,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58653364.63223788,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617824400,
+            "reportedHashrate": 60733254,
+            "currentHashrate": 47777777.777777776,
+            "validShares": 43,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58895931.142410025,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617825000,
+            "reportedHashrate": 60720521,
+            "currentHashrate": 48888888.88888889,
+            "validShares": 44,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59177621.28325509,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617825600,
+            "reportedHashrate": 60713889,
+            "currentHashrate": 51111111.11111111,
+            "validShares": 46,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59121212.121212125,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617826200,
+            "reportedHashrate": 60688319,
+            "currentHashrate": 45555555.55555555,
+            "validShares": 41,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59027006.17283951,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617826800,
+            "reportedHashrate": 60589525,
+            "currentHashrate": 37777777.777777776,
+            "validShares": 34,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59204475.308641985,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617827400,
+            "reportedHashrate": 60658011,
+            "currentHashrate": 40000000,
+            "validShares": 36,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59297067.901234575,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617828000,
+            "reportedHashrate": 60695513,
+            "currentHashrate": 45555555.55555555,
+            "validShares": 41,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59335648.14814815,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617828600,
+            "reportedHashrate": 60698379,
+            "currentHashrate": 44444444.44444445,
+            "validShares": 40,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59243055.55555556,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617829200,
+            "reportedHashrate": 60701839,
+            "currentHashrate": 50000000,
+            "validShares": 45,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 59119598.7654321,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617829800,
+            "reportedHashrate": 60714107,
+            "currentHashrate": 61833333.333333336,
+            "validShares": 55,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58993441.35802469,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617830400,
+            "reportedHashrate": 60692480,
+            "currentHashrate": 65166666.666666664,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58916280.86419753,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617831000,
+            "reportedHashrate": 60709602,
+            "currentHashrate": 69222222.22222222,
+            "validShares": 61,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58913580.24691358,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617831600,
+            "reportedHashrate": 60688170,
+            "currentHashrate": 61444444.44444445,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58864583.33333334,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617832200,
+            "reportedHashrate": 60667491,
+            "currentHashrate": 70333333.33333333,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58946759.25925926,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617832800,
+            "reportedHashrate": 60682816,
+            "currentHashrate": 67000000,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58998070.98765432,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617833400,
+            "reportedHashrate": 60700362,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 59036651.2345679,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617834000,
+            "reportedHashrate": 60666698,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 59026234.56790123,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617834600,
+            "reportedHashrate": 60689993,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58979938.27160493,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617835200,
+            "reportedHashrate": 60728754,
+            "currentHashrate": 66277777.777777776,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58956790.12345679,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617835800,
+            "reportedHashrate": 60716848,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58887345.67901234,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617836400,
+            "reportedHashrate": 60687170,
+            "currentHashrate": 69611111.1111111,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58848765.43209876,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617837000,
+            "reportedHashrate": 60686808,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58779320.98765431,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617837600,
+            "reportedHashrate": 60702672,
+            "currentHashrate": 65166666.666666664,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58740740.740740746,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617838200,
+            "reportedHashrate": 60696158,
+            "currentHashrate": 62222222.222222224,
+            "validShares": 56,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58658564.81481481,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617838800,
+            "reportedHashrate": 60703961,
+            "currentHashrate": 60000000,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58638117.28395061,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617839400,
+            "reportedHashrate": 60693089,
+            "currentHashrate": 58888888.88888889,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58671682.098765425,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617840000,
+            "reportedHashrate": 60684099,
+            "currentHashrate": 57777777.777777776,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58689814.81481481,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617840600,
+            "reportedHashrate": 60699388,
+            "currentHashrate": 57777777.777777776,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58638503.08641975,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617841200,
+            "reportedHashrate": 60703542,
+            "currentHashrate": 60000000,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58618055.55555555,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617841800,
+            "reportedHashrate": 60706583,
+            "currentHashrate": 58888888.88888889,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58625771.604938276,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617842400,
+            "reportedHashrate": 60702078,
+            "currentHashrate": 54444444.44444445,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58564043.209876545,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617843000,
+            "reportedHashrate": 60696533,
+            "currentHashrate": 47777777.777777776,
+            "validShares": 43,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58417438.27160494,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617843600,
+            "reportedHashrate": 60734884,
+            "currentHashrate": 46666666.666666664,
+            "validShares": 42,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58309413.58024692,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617844200,
+            "reportedHashrate": 60761731,
+            "currentHashrate": 46277777.777777776,
+            "validShares": 41,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58260416.66666667,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617844800,
+            "reportedHashrate": 60742720,
+            "currentHashrate": 42944444.44444445,
+            "validShares": 38,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58211419.75308642,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617845400,
+            "reportedHashrate": 60734676,
+            "currentHashrate": 50722222.222222224,
+            "validShares": 45,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58185570.98765432,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617846000,
+            "reportedHashrate": 60705359,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58190586.41975308,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617846600,
+            "reportedHashrate": 60721933,
+            "currentHashrate": 65166666.666666664,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58175154.32098766,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617847200,
+            "reportedHashrate": 60746616,
+            "currentHashrate": 59611111.11111111,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58074845.67901234,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617847800,
+            "reportedHashrate": 60750508,
+            "currentHashrate": 64444444.44444445,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58003086.41975309,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617848400,
+            "reportedHashrate": 60740878,
+            "currentHashrate": 67777777.77777778,
+            "validShares": 61,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57939043.209876545,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617849000,
+            "reportedHashrate": 60722062,
+            "currentHashrate": 75555555.55555555,
+            "validShares": 68,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57944444.44444445,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617849600,
+            "reportedHashrate": 60651848,
+            "currentHashrate": 65166666.666666664,
+            "validShares": 58,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57931712.96296297,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617850200,
+            "reportedHashrate": 60592138,
+            "currentHashrate": 64055555.55555555,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57954861.11111112,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617850800,
+            "reportedHashrate": 60692711,
+            "currentHashrate": 68833333.33333333,
+            "validShares": 60,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58057484.56790124,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617851400,
+            "reportedHashrate": 60754218,
+            "currentHashrate": 67722222.22222222,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58149691.358024694,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617852000,
+            "reportedHashrate": 60738459,
+            "currentHashrate": 67722222.22222222,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58229166.66666668,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617852600,
+            "reportedHashrate": 60737743,
+            "currentHashrate": 56611111.11111111,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58262345.67901236,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617853200,
+            "reportedHashrate": 60705742,
+            "currentHashrate": 58111111.11111111,
+            "validShares": 51,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58275077.160493836,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617853800,
+            "reportedHashrate": 60689416,
+            "currentHashrate": 59222222.222222224,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 58310956.79012346,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617854400,
+            "reportedHashrate": 60723978,
+            "currentHashrate": 53333333.333333336,
+            "validShares": 48,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58228780.86419754,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617855000,
+            "reportedHashrate": 60712050,
+            "currentHashrate": 57777777.777777776,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58180169.753086425,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617855600,
+            "reportedHashrate": 60715564,
+            "currentHashrate": 48888888.88888889,
+            "validShares": 44,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 58051697.53086421,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617856200,
+            "reportedHashrate": 60698118,
+            "currentHashrate": 49611111.11111111,
+            "validShares": 44,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57876929.01234568,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617856800,
+            "reportedHashrate": 60692022,
+            "currentHashrate": 52944444.44444445,
+            "validShares": 47,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57733024.69135802,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617857400,
+            "reportedHashrate": 60665542,
+            "currentHashrate": 61833333.333333336,
+            "validShares": 55,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57627700.61728395,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617858000,
+            "reportedHashrate": 60664039,
+            "currentHashrate": 69611111.1111111,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57638117.283950604,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617858600,
+            "reportedHashrate": 60679296,
+            "currentHashrate": 66277777.777777776,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57622685.18518517,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617859200,
+            "reportedHashrate": 60672312,
+            "currentHashrate": 74777777.77777778,
+            "validShares": 66,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 57666280.86419752,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617859800,
+            "reportedHashrate": 60661109,
+            "currentHashrate": 74055555.55555555,
+            "validShares": 66,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57763888.88888887,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617860400,
+            "reportedHashrate": 60674508,
+            "currentHashrate": 77388888.8888889,
+            "validShares": 69,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57887345.679012336,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617861000,
+            "reportedHashrate": 60706647,
+            "currentHashrate": 69611111.1111111,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 57972222.22222221,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617861600,
+            "reportedHashrate": 60674636,
+            "currentHashrate": 67722222.22222222,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58013117.2839506,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617862200,
+            "reportedHashrate": 60654735,
+            "currentHashrate": 66222222.222222224,
+            "validShares": 57,
+            "invalidShares": 0,
+            "staleShares": 4,
+            "averageHashrate": 58030864.19753084,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617862800,
+            "reportedHashrate": 60664808,
+            "currentHashrate": 68833333.33333333,
+            "validShares": 60,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58105324.07407406,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617863400,
+            "reportedHashrate": 60580930,
+            "currentHashrate": 72166666.66666667,
+            "validShares": 63,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58164351.85185184,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617864000,
+            "reportedHashrate": 60477389,
+            "currentHashrate": 62166666.666666664,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58128086.41975308,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617864600,
+            "reportedHashrate": 60547237,
+            "currentHashrate": 58833333.333333336,
+            "validShares": 51,
+            "invalidShares": 0,
+            "staleShares": 3,
+            "averageHashrate": 58060956.79012344,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617865200,
+            "reportedHashrate": 60526756,
+            "currentHashrate": 56277777.777777776,
+            "validShares": 50,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 58022376.543209866,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617865800,
+            "reportedHashrate": 0,
+            "currentHashrate": 46666666.666666664,
+            "validShares": 42,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57906635.80246912,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617866400,
+            "reportedHashrate": 0,
+            "currentHashrate": 32222222.222222224,
+            "validShares": 29,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57659722.22222222,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617867000,
+            "reportedHashrate": 0,
+            "currentHashrate": 21111111.111111112,
+            "validShares": 19,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57343364.19753085,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617867600,
+            "reportedHashrate": 0,
+            "currentHashrate": 16666666.666666666,
+            "validShares": 15,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 57011574.07407406,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617868200,
+            "reportedHashrate": 0,
+            "currentHashrate": 8888888.888888888,
+            "validShares": 8,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56620756.1728395,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617868800,
+            "reportedHashrate": 60483787,
+            "currentHashrate": 8888888.888888888,
+            "validShares": 8,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56168209.87654321,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617869400,
+            "reportedHashrate": 60478570,
+            "currentHashrate": 32222222.222222224,
+            "validShares": 29,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55900848.7654321,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617870000,
+            "reportedHashrate": 60575031,
+            "currentHashrate": 41111111.11111111,
+            "validShares": 37,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55716049.382716045,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617870600,
+            "reportedHashrate": 60632074,
+            "currentHashrate": 58888888.88888889,
+            "validShares": 53,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55685570.98765432,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617871200,
+            "reportedHashrate": 60627946,
+            "currentHashrate": 70000000,
+            "validShares": 63,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55747685.18518518,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617871800,
+            "reportedHashrate": 60669661,
+            "currentHashrate": 85166666.66666667,
+            "validShares": 76,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 55935570.98765432,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617872400,
+            "reportedHashrate": 60651348,
+            "currentHashrate": 89222222.22222222,
+            "validShares": 79,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 56205632.71604939,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617873000,
+            "reportedHashrate": 60640747,
+            "currentHashrate": 74777777.77777778,
+            "validShares": 66,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 56406250,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617873600,
+            "reportedHashrate": 60580206,
+            "currentHashrate": 74777777.77777778,
+            "validShares": 66,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 56547453.7037037,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617874200,
+            "reportedHashrate": 58335060,
+            "currentHashrate": 62555555.55555555,
+            "validShares": 55,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 56518904.32098766,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617874800,
+            "reportedHashrate": 49554258,
+            "currentHashrate": 59222222.222222224,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 2,
+            "averageHashrate": 56467206.79012346,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617875400,
+            "reportedHashrate": 58091468,
+            "currentHashrate": 50722222.222222224,
+            "validShares": 45,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56356481.481481485,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617876000,
+            "reportedHashrate": 60341153,
+            "currentHashrate": 48888888.88888889,
+            "validShares": 44,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56186728.395061746,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617876600,
+            "reportedHashrate": 59960791,
+            "currentHashrate": 54444444.44444445,
+            "validShares": 49,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56024691.358024694,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617877200,
+            "reportedHashrate": 59520511,
+            "currentHashrate": 57777777.777777776,
+            "validShares": 52,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55955246.91358025,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617877800,
+            "reportedHashrate": 59029861,
+            "currentHashrate": 65555555.55555555,
+            "validShares": 59,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 55986111.11111112,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617878400,
+            "reportedHashrate": 60516048,
+            "currentHashrate": 67777777.77777778,
+            "validShares": 61,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56024691.358024694,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617879000,
+            "reportedHashrate": 60733245,
+            "currentHashrate": 68888888.8888889,
+            "validShares": 62,
+            "invalidShares": 0,
+            "staleShares": 0,
+            "averageHashrate": 56050540.1234568,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617879600,
+            "reportedHashrate": 60704431,
+            "currentHashrate": 68500000,
+            "validShares": 61,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56073688.27160495,
+            "activeWorkers": 1
+        },
+        {
+            "time": 1617880200,
+            "reportedHashrate": 60708382,
+            "currentHashrate": 60722222.222222224,
+            "validShares": 54,
+            "invalidShares": 0,
+            "staleShares": 1,
+            "averageHashrate": 56058256.17283951,
+            "activeWorkers": 1
+        }
+    ]
+}

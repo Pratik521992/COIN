@@ -3,31 +3,37 @@ export const usdToInr = (value) => {
 }
 export function ethToUsd(usd, value) {
     if(usd && value) {
-        return (Math.floor((usd * value)*100)/100).toString()
+        return (Math.floor((usd * value)*100)/100)
     }
-    return null
+    return 0
 }
 export const ethToInr = (inr, value) => {   
     if(inr && value) {
-        return (Math.floor((inr * value)*100)/100).toString()
+        return (Math.floor((inr * value)*100)/100)
     }
-    return null
+    return 0
 }
 
 export function epoch (date) {
-    var utcSeconds = date;
-    var d = new Date(0); // The 0 there is the key, which sets the date to the epoch
-    d.setUTCSeconds(utcSeconds);
-    return d;
+    return Math.floor(Math.abs(new Date() - new Date(date * 1000))/1000/60)
 }
 
 export function hashToMegaHash(hash) {
-    return Math.round(hash*0.000001*100)/100
+    if(hash) {
+        return Math.round(hash*0.000001*100)/100
+    }
+    return 0
 }
 
 export const getETH = (value) => {
     if(value) {
-        return Math.floor(value*Math.pow(10, -18)*10000)/10000
+        return Math.floor(value*Math.pow(10, -18)*100000)/100000
     }
-    return null
+    return 0
+}
+export const getETHChart = (value) => {
+    if(value) {
+        return Math.abs(value*Math.pow(10, -15))
+    }
+    return 0
 }

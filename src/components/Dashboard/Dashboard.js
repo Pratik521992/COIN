@@ -13,18 +13,17 @@ import {
 } from "../utils/converted";
 import PayoutChart from "./PayoutChart";
 import HashRateChart from "./HashRateChart";
+import Countdown from "./Countdown";
 
 function Dashboard() {
-  const { stats, inr, usd } = useSelector((state) => state.dashboard);
-  
-
+  const { stats, inr, usd, unpaid={} } = useSelector((state) => state.dashboard);
+  const lastStatsData = stats[stats.length-1] || ''
   const values = {
-    speed : hashToMegaHash(stats.reportedHashrate),
-    minedEth: getETH(stats.unpaid),
-    minedInr: ethToInr(inr, getETH(stats.unpaid)),
-    minedUsd: ethToUsd(usd, getETH(stats.unpaid))
+    speed : hashToMegaHash(lastStatsData.reportedHashrate),
+    minedEth: getETH(unpaid.unpaid),
+    minedInr: ethToInr(inr, getETH(unpaid.unpaid)),
+    minedUsd: ethToUsd(usd, getETH(unpaid.unpaid))
   }
-
   return (
     <div className="Dashboard">
       <div className="Shards">
@@ -33,7 +32,7 @@ function Dashboard() {
             Active Miners
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            {stats.activeWorkers}
+            {lastStatsData.activeWorkers}
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             Hash Rate
@@ -57,7 +56,7 @@ function Dashboard() {
           <CountUp
               end={values.minedEth}
               separator=","
-              decimals={4}
+              decimals={5}
               decimal="."
               suffix=" ETH"
               />
@@ -85,22 +84,21 @@ function Dashboard() {
               decimal="."
               suffix=" $"
             />
-          </Typography>
-         
+          </Typography>         
         </CardItem>
 
         <CardItem>
           <Typography color="textSecondary" gutterBottom>
-            Worker active since
+           Last Updated
           </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            {epoch(stats.lastSeen).toLocaleString()}
+          <Typography className="shardValueRed" variant="h5" component="h2">
+            {epoch(lastStatsData.time)} Min ago
           </Typography>
           <Typography color="textSecondary" gutterBottom>
-            Last Update
+            Next Refresh
           </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            {epoch(stats.time).toLocaleString()}
+          <Typography className="shardValueGreen" style={{display:'flex', justifyContent:'center', alignItems:'center',gridGap: '20%'}} variant="h5" component="h2">
+            <Countdown stats={lastStatsData} /> Sec
           </Typography>
         </CardItem>
 
@@ -109,19 +107,19 @@ function Dashboard() {
             INR/Day (24 hrs)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            &#x20b9; {usdToInr(stats.usdPerMin * 60 * 24)}
+             {usdToInr(unpaid.usdPerMin * 60 * 24)} &#x20b9;
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             INR/Week (7 days)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            &#x20b9; {usdToInr(stats.usdPerMin * 60 * 24 * 7)}
+             {usdToInr(unpaid.usdPerMin * 60 * 24 * 7)} &#x20b9;
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             INR/Month (30 days)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            &#x20b9; {usdToInr(stats.usdPerMin * 60 * 24 * 30)}
+             {usdToInr(unpaid.usdPerMin * 60 * 24 * 30)} &#x20b9;
           </Typography>
         </CardItem>
 
@@ -130,13 +128,13 @@ function Dashboard() {
             Shares (Valid)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            {stats.validShares}
+            {lastStatsData.validShares}
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             Invalid Shares
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            {stats.invalidShares}
+            {lastStatsData.invalidShares}
           </Typography>
         </CardItem>
       </div>
