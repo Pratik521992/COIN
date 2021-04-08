@@ -50,7 +50,7 @@ function Dashboard() {
 
         <CardItem>
           <Typography color="textSecondary" gutterBottom>
-            Ballance Amount
+            Balance Amount
           </Typography>
           <Typography className={values.minedEth<0.001 ? "shardValueRed": "shardValueGreen"} variant="h5" component="h2">
           <CountUp
@@ -62,7 +62,7 @@ function Dashboard() {
               />
           </Typography>
           <Typography color="textSecondary" gutterBottom>
-            Mined INR
+            INR
           </Typography>
           <Typography className="shardValueGreen" variant="h5" component="h2">
           <CountUp
@@ -74,7 +74,7 @@ function Dashboard() {
             />
           </Typography>
           <Typography color="textSecondary" gutterBottom>
-            Unpaid USD
+            USD
           </Typography>
           <Typography className="shardValueGreen" variant="h5" component="h2">
           <CountUp
