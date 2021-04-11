@@ -17,7 +17,8 @@ const initialState = {
     usdPerMin: 0.0033927125944785666,
     validShares: 35,
     inr: null,
-    usd: null
+    usd: null,
+    nextTick: 120
   }],
 };
 

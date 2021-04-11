@@ -31,7 +31,7 @@ function Dashboard() {
           <Typography color="textSecondary" gutterBottom>
             Active Miners
           </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
+          <Typography className={lastStatsData.activeWorkers<1 ? "shardValueRed": "shardValueGreen"} variant="h5" component="h2">
             {lastStatsData.activeWorkers}
           </Typography>
           <Typography color="textSecondary" gutterBottom>
@@ -92,13 +92,13 @@ function Dashboard() {
            Last Updated
           </Typography>
           <Typography className="shardValueRed" variant="h5" component="h2">
-            {epoch(lastStatsData.time)} Min ago
+            {epoch(unpaid.time)} Min ago
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             Next Refresh
           </Typography>
           <Typography className="shardValueGreen" style={{display:'flex', justifyContent:'center', alignItems:'center',gridGap: '20%'}} variant="h5" component="h2">
-            <Countdown stats={lastStatsData} /> Sec
+            <Countdown /> Sec
           </Typography>
         </CardItem>
 
@@ -128,13 +128,13 @@ function Dashboard() {
             Shares (Valid)
           </Typography>
           <Typography className="shardValue" variant="h5" component="h2">
-            {lastStatsData.validShares}
+            {unpaid.validShares} 
           </Typography>
           <Typography color="textSecondary" gutterBottom>
             Invalid Shares
           </Typography>
-          <Typography className="shardValue" variant="h5" component="h2">
-            {lastStatsData.invalidShares}
+          <Typography className={!unpaid.invalidShares && "timeLeft shardValueRed"} variant="h5" component="h2">
+            {unpaid.invalidShares || 'Miner Inactive'}
           </Typography>
         </CardItem>
       </div>

@@ -36,15 +36,17 @@ export const getComponentDetails = () => {
   ];
   let requests = urls.map((url) => fetch(url));
   return (dispatch) => {
-    Promise.all(requests).then((res) =>
+    Promise.all(requests)
+    .then((res) =>
       res.forEach((res) =>
-        res.json().then((res) => {
+        res.json()
+        .then((res) => {
           if (res.ethereum) {
             const key = Object.keys(res.ethereum)[0];
             dispatch(exChangeRate(key, res.ethereum.inr || res.ethereum.usd));
-          }else if (res.data.activeWorkers) {
+          }else if (res.data.time) {
             dispatch(setUnpaid(res.data));
-          } else if (res.data[0].activeWorkers) {
+          } else if (res.data[0].time) {
             dispatch(statsData(res.data));
           }  else {
             dispatch(setPayouts(res));

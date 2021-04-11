@@ -14,11 +14,7 @@ const store = createStore(rootReducer, applyMiddleware(asynsActions));
 refreshToken();
 
 export function refreshToken() {
-  const nextTick = 120000;
   store.dispatch(getComponentDetails());
-  setTimeout(() => {
-    refreshToken();
-  }, nextTick);
 }
 
 ReactDOM.render(

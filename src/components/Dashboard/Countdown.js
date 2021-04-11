@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import { getComponentDetails } from "../../redux/actions/dashboard";
 
 function Countdown() {
   const [time, setTime] = useState(120);
-  const { nextTick } = useSelector((state) => state.dashboard);
+  const dispatch = useDispatch()
 
   useEffect(() => {
     const timer = time > 0 && setInterval(() => setTime(time - 1), 1000);
@@ -11,8 +12,11 @@ function Countdown() {
   }, [time]);
 
   useEffect(() => {
-    setTime(120);
-  }, [nextTick]);
+    if(time === 0) {
+      dispatch(getComponentDetails())
+      setTime(120)
+    }
+  }, [time, dispatch]);
 
   return (
     <p
