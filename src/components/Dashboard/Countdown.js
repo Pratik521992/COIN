@@ -4,7 +4,7 @@ import { getComponentDetails } from "../../redux/actions/dashboard";
 
 function Countdown() {
   const [time, setTime] = useState(120);
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const timer = time > 0 && setInterval(() => setTime(time - 1), 1000);
@@ -12,9 +12,12 @@ function Countdown() {
   }, [time]);
 
   useEffect(() => {
-    if(time === 0) {
-      dispatch(getComponentDetails())
-      setTime(120)
+    if (time === 0) {
+      refreshToken();
+      async function refreshToken() {
+        await dispatch(getComponentDetails());
+        setTime(120);
+      }
     }
   }, [time, dispatch]);
 

@@ -133,8 +133,8 @@ function Dashboard() {
           <Typography color="textSecondary" gutterBottom>
             Invalid Shares
           </Typography>
-          <Typography className={!unpaid.invalidShares && "timeLeft shardValueRed"} variant="h5" component="h2">
-            {unpaid.invalidShares || 'Miner Inactive'}
+          <Typography className={`${!unpaid.activeWorkers && "timeLeft"} shardValueRed`} variant="h5" component="h2">
+            {(unpaid.activeWorkers && unpaid.activeWorkers > 0) ? unpaid.invalidShares : 'Miner Inactive'}
           </Typography>
         </CardItem>
       </div>
