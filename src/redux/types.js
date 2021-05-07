@@ -6,3 +6,4 @@ export const STATS_DATA = 'STATS_DATA';
 export const EXCHANGE_RATE = 'EXCHANGE_RATE';
 export const PAYOUTS = 'PAYOUTS';
 export const UNPAID = 'UNPAID';
+export const NET_WORTH = 'NET_WORTH';

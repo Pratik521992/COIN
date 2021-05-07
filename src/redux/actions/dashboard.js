@@ -1,4 +1,4 @@
-import { STATS_DATA, EXCHANGE_RATE, PAYOUTS, UNPAID } from "../types";
+import { STATS_DATA, EXCHANGE_RATE, PAYOUTS, UNPAID, NET_WORTH } from "../types";
 
 export const statsData = (data) => {
   return {
@@ -9,6 +9,12 @@ export const statsData = (data) => {
 export const setPayouts = (data) => {
   return {
     type: PAYOUTS,
+    payload: data,
+  };
+};
+export const setNetWorth = (data) => {
+  return {
+    type: NET_WORTH,
     payload: data,
   };
 };
@@ -33,6 +39,7 @@ export const getComponentDetails = () => {
     "https://api.ethermine.org/miner/0x33feb9771e261a41b78429e0e1be8c360727e584/rounds",
     "https://api.ethermine.org/miner/0x33feb9771e261a41b78429e0e1be8c360727e584/history",
     "https://api.ethermine.org/miner/0x33feb9771e261a41b78429e0e1be8c360727e584/currentStats",
+    "https://api.ethermine.org/miner/0x33feb9771e261a41b78429e0e1be8c360727e584/payouts",
   ];
   let requests = urls.map((url) => fetch(url));
   return (dispatch) => {
@@ -48,7 +55,9 @@ export const getComponentDetails = () => {
             dispatch(setUnpaid(res.data));
           } else if (res.data[0].time) {
             dispatch(statsData(res.data));
-          }  else {
+          } else if(res.data[0].paidOn) {
+            dispatch(setNetWorth(res.data))
+          } else {
             dispatch(setPayouts(res));
           }
         })

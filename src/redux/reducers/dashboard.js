@@ -1,4 +1,4 @@
-import { STATS_DATA, EXCHANGE_RATE, PAYOUTS, UNPAID } from "../types";
+import { STATS_DATA, EXCHANGE_RATE, PAYOUTS, UNPAID, NET_WORTH } from "../types";
 
 const initialState = {
   stats: [{
@@ -44,6 +44,11 @@ const dashboardReducer = (state = initialState, action) => {
       return {
         ...state,
         unpaid: action.payload,
+      };
+    case NET_WORTH:
+      return {
+        ...state,
+        netWorth: action.payload.reduce((acc, obj) => acc+parseInt(obj.amount), 0),
       };
     default:
       return state;

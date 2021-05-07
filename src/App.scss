@@ -57,63 +57,12 @@
   }
  .Search {
    display: flex;
-   flex-direction: column-reverse;
+   flex-direction: row;
    align-items: center;
    justify-content: center;
-   margin: 2% auto;
-   .SearchLabel {
-    float: right;
-  }
+   padding: 40px;
+   grid-gap: 40px;
  }
-  
-  .SearchContainer {
-    &:hover > .SearchInput {
-      width: 200px;
-      padding: 0 6px;
-    }
-    background-color: #2f3640;
-    height: 40px;
-    border-radius: 40px;
-    padding: 10px;
-    .SearchInput {
-      border: none;
-      background: none;
-      outline: none;
-      float: left;
-      padding: 0;
-      color: white;
-      font-size: 16px;
-      transition: 0.4s;
-      line-height: 40px;
-      width: 0px;
-      font-weight: bold;
-    }
-
-    .SearchBtn {
-      border: none;
-      outline: none;
-      text-decoration: none;
-      color: #e84118;
-      float: right;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: #2f3640;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transition: 0.4s;
-      color: white;
-      cursor: pointer;
-      &:hover {
-        background: white;
-        color: black;
-      }
-      }       
-  }
-   .SearchBtn > i {
-    font-size: 30px;
-   }
 
    .Dashboard {
     background: #f5f6f8;
