@@ -20,7 +20,9 @@ body {
   z-index: 1000;
   border-radius: 25%;
   @media only screen and (max-width: 600px) {
-    display: none;
+    height: 60px;
+    width: 65px;
+    top: -10px;
   }
 }
 .Header {
@@ -81,7 +83,8 @@ body {
   }
   }
  .Search {
-   grid-gap: 20px !important;
+   background-color: rgba(255, 99, 132, 0.5) !important;
+   grid-gap: 40px !important;
    overflow: visible !important;
    position: relative;
     width: 90vw;
@@ -90,7 +93,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
  }
 
    .Dashboard {
@@ -123,6 +126,7 @@ body {
         display: flex;
         width: 90vw;
         .DashBoardTimer {
+          padding: 10px;
           width: 50vw;
           height: 30vh;
           border-radius: 20px;
@@ -148,22 +152,7 @@ body {
         }
         @media only screen and (min-width: 300px) and (max-width: 1024px) {
           width: 95vw;
-        }
-        
-      }
-      .timeLeft {
-        animation: animate 1s linear infinite;
-      }
-      @keyframes animate{
-        0%{
-          opacity: 0;
-        }
-        50%{
-          opacity: 1;
-        }
-        100%{
-          opacity: 0;
-        }
+        }        
       }
      }
      .CardItem {
@@ -174,6 +163,7 @@ body {
       border-radius: 11px !important;
     } 
     .MapContainer {
+      border-radius: 20px;
       display: flex;
       flex-direction: row;
       justify-content: space-around;
@@ -244,7 +234,6 @@ body {
       position: absolute;
       width: 90%;
       margin: 24px;
-      height: 40%;
       border-radius: 20px;
       span {
         font-size: 18px;
@@ -305,6 +294,7 @@ body {
     align-items: center;
     justify-content: flex-end;
     border-radius: 20px;
+   
     span {
       font-size: 18px;
       font-weight: 500;
@@ -341,4 +331,19 @@ body {
       font-size: 18px;
       color: #474D58;
     }
+    @media only screen and (min-width: 300px) and (max-width: 600px) {
+      span {
+        font-size: 14px;
+      }
+      .shardValueGreen {
+        font-size: 14px;
+        font-weight: 900;
+        color: green;
+      }
+      .shardValueRed {
+        font-size: 14px;
+        font-weight: 900;
+        color: orangered;
+      }
+     }
   }
