@@ -1,3 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+body {
+  font-family: 'Mulish';
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ImageContainer {
+  height: 60px;
+  width: 64px;
+}
+.currencyImage {
+  height: 120px;
+  width: 125px;
+  position: absolute;
+  top: -50px;
+  z-index: 1000;
+  border-radius: 25%;
+  @media only screen and (max-width: 600px) {
+    display: none;
+  }
+}
 .Header {
     display: flex;
     flex-direction: row;
@@ -56,47 +81,74 @@
   }
   }
  .Search {
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   padding: 40px;
-   grid-gap: 40px;
+   grid-gap: 20px !important;
+   overflow: visible !important;
+   position: relative;
+    width: 90vw;
+    height: 5vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
  }
 
    .Dashboard {
+     max-width: 100vw;
+     overflow-y: hidden;
     background: #f5f6f8;
-    padding: 25px;
     font-size: 15px;
      display: flex;
      justify-content: center;
      flex-direction: column;
      align-items: center;
-     .Shards {
+     .DashBoardTimer {
+      width: 10vw;
+      height: 30vh;
+      border-radius: 20px;
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+     .Shards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      align-items: center;
+      justify-content: center;
       flex-wrap: wrap;
       grid-gap: 2%;
-      padding: 20px;
-      width: 100%;
+      padding: 0px 20px;
+      @media only screen and (min-width: 300px) and (max-width: 1024px) {
+        display: flex;
+        width: 90vw;
+        .DashBoardTimer {
+          width: 50vw;
+          height: 30vh;
+          border-radius: 20px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+       }
       .CardItem {
-        width: 200px;
+        width: 80%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
         .shardValueGreen {
-          margin-bottom: 8px;
-          font-size: 22px;
+          font-size: 18px;
           color: green;
         }
         .shardValueRed {
-          margin-bottom: 8px;
-          font-size: 22px;
+          font-size: 18px;
           color: orangered;
         }
-        
+        @media only screen and (min-width: 300px) and (max-width: 1024px) {
+          width: 95vw;
+        }
         
       }
       .timeLeft {
@@ -143,6 +195,7 @@
         align-items: center;
         justify-content: center;
         text-align: center;
+        
         .CardItem {
           width: 100vw;
           display: flex;
@@ -167,4 +220,125 @@
    }
    
 
-  
+  .CardWrapper {
+    margin: 24px;
+    position: relative;
+    background-color: #F65365;
+    position: relative;
+    background-image: url('plane_thumb.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100% 58%;
+    background-position: top left;
+    height: 45vh;
+    width: 40vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    border-radius: 20px;
+    @media only screen and (min-width: 300px) and (max-width: 1024px) {
+      width: 100vw;
+      height: 80vh;
+     }
+    .CardKit {
+      position: absolute;
+      width: 90%;
+      margin: 24px;
+      height: 40%;
+      border-radius: 20px;
+      span {
+        font-size: 18px;
+        font-weight: 500;
+        @media only screen and (min-width: 300px) and (max-width: 1024px) {
+          font-size: 12px;
+         }
+      }
+      .shardValueGreen {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 900;
+        color: green;
+      }
+      .shardValueRed {
+        margin-top: 12px;
+        font-size: 18px;
+        font-weight: 900;
+        color: orangered;
+      }
+      .CardKitContent {
+        background: #fff;
+        border-radius: 15px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        padding: 25px;
+        position: relative;
+      }
+      
+    }
+    .ActiveHeader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10px;
+      font-family: "Mulish", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #061329;
+    }
+  }
+
+  .DataKitWrapper {
+    margin: 24px;
+    position: relative;
+    background-color: #EEE5FF;
+    position: relative;
+    background: linear-gradient(rgba(173, 168, 168, 0.5), rgba(248, 228, 228, 0.5)), url("media.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: 100% 58%;
+    background-position: top left;
+    height: 45vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 20px;
+    span {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .shardValueGreen {
+      font-size: 18px;
+      font-weight: 900;
+      color: green;
+    }
+    .shardValueRed {
+      font-size: 18px;
+      font-weight: 900;
+      color: orangered;
+    }
+    .CardKitContent {
+      background: #fff;
+      border-radius: 15px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 5px;
+      padding: 25px;
+      position: relative;
+    }
+    @media only screen and (min-width: 300px) and (max-width: 1024px) {
+     width: 80vw;
+    }
+    .ActiveHeader {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: 10px;
+      font-family: "Mulish", sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: #474D58;
+    }
+  }

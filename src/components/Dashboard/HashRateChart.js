@@ -24,27 +24,44 @@ function HashRateChart() {
             label: "Hash Rate Mh/s",
             data: historyData,
             fill: true,
-            borderColor: "#2f3640",
-            borderWidth: 1.2,
+            borderColor: "rgba(255, 99, 132, 1)",
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderWidth: 2,
+            tension: 0.5,
+            pointRadius: 0.5,
+            pointRotation: 4 
           },
         ],
       };
       const chartBody = new Chart(canvasRef.current, {
+        
         type: "line",
         data: data,
         options: {
+          animations: {
+            y: {
+              easing: 'easeInOutElastic',
+              from: (ctx) => {
+                if (ctx.type === 'data') {
+                  if (ctx.mode === 'default' && !ctx.dropped) {
+                    ctx.dropped = true;
+                    return 0;
+                  }
+                }
+              },
+            },
           responsive: true,
           plugins: {
             title: {
               display: true,
-              text: "Custom Chart Title",
               padding: {
                 top: 10,
                 bottom: 30,
               },
             },
           },
-        },
+          },
+        }
       });
 
       chartBody.render();

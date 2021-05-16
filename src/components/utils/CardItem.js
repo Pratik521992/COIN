@@ -1,15 +1,10 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
 
-function CardItem({children}) {
+function CardItem({ children, className }) {
   return (
-    <Card elevation={4} className="CardItem">
-      <CardContent>
-        {
-          children
-        }
-      </CardContent>
+    <Card elevation={4} className= {className ? className : `CardItem`}>
+      {children}
     </Card>
   );
 }

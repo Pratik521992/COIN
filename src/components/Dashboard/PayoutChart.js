@@ -12,11 +12,17 @@ function PayoutChart() {
   useEffect(() => {
     if (rounds) {
       const roundsData = rounds.data
-        .filter((data, i, arr) => i < arr.length - 900)
+        .filter((data, i, arr) => {
+          if(arr.length<200) return true;
+          return i > arr.length - 100;
+        })
         .map((data) => getETHChart(data.amount));
 
       const roundsLabel = rounds.data
-        .filter((data, i, arr) => i < arr.length - 900)
+        .filter((data, i, arr) => {
+          if(arr.length<200) return true;
+          return i > arr.length - 100;
+        })
         .map(
           (data) => `${Math.floor(((data.block / 10000) * 1000) / 1000)}...`
         );
@@ -27,25 +33,24 @@ function PayoutChart() {
           {
             label: "Payouts milli ETH",
             data: roundsData,
-            borderColor: "rgba(75, 192, 192, 0.9)",
-            backgroundColor: "rgba(255, 99, 132, 0.9)",
-            borderWidth: 1,
+            borderColor: "rgba(54, 162, 235, 1)",
+            backgroundColor: "rgba(54, 162, 235, 0.2)",
+            borderWidth: 2,
+            tension: 0.5,
+            pointRadius: 0.5,
+            pointRotation: 4            
           },
         ],
       };
       const chartBody = new Chart(canvasRefBar.current, {
-        type: "bar",
+        type: "line",
         data: data,
         options: {
           responsive: true,
           plugins: {
             legend: {
               position: "top",
-            },
-            title: {
-              display: true,
-              text: "Chart.js Bar Chart",
-            },
+            }
           },
         },
       });
